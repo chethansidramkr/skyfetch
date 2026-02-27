@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SkyFetch</title>
+  <title>SkyFetch Weather Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -10,6 +10,20 @@
   <div class="container">
     <h1>🌤 SkyFetch</h1>
 
+    <!-- Search UI -->
+    <div class="search">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name"
+      />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Message Area -->
+    <div id="message"></div>
+
+    <!-- Weather Display -->
     <div id="weather">
       <h2 id="city"></h2>
       <img id="icon" />
